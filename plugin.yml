@@ -1,0 +1,14 @@
+name: MLGRush
+version: 1.0
+author: PrinxIsLeqit
+api: [3.0.0-ALPHA11, 3.0.0-ALPHA12]
+main: PrinxIsLeqit\MLGRush\MLGRush
+description: 'MLGRush'
+commands:
+    mlgrush:
+        description: 'MLGRush main command'
+    leave:
+        description: 'Leave command'
+    hub:
+        description: 'Hub command'
+        aliases: [lobby, l]
