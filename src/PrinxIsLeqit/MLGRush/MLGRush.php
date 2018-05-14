@@ -676,7 +676,7 @@ class MLGRush extends PluginBase implements Listener {
     }
 }
 
-class MLGRushTask extends PluginTask implements   {
+class MLGRushTask extends PluginTask implements MLGRush {
     public $cfg;
     public $prefix = '§1M§fL§4G§fRush §8| §7';
 
