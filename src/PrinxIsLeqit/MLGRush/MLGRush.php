@@ -680,10 +680,14 @@ class MLGRushTask extends PluginTask {
     public $cfg;
     public $prefix = '§1M§fL§4G§fRush §8| §7';
 
-    public function __construct(\pocketmine\plugin\Plugin $owner) {
-        $this->plugin = $owner;
-        parent::__construct($owner);
-    }
+ public function construct($plugin)
+{
+     $this->plugin = $plugin;
+     parent::construct($plugin);
+}
+        
+        
+    
 
     public function onRun($tick) {
         foreach ($this->getOwner()->getServer()->getOnlinePlayers() as $player) {
