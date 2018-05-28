@@ -48,7 +48,7 @@ class MLGRush extends PluginBase implements Listener {
             $this->initConfig();
         }
         $this->cfg = new Config($this->getDataFolder() . 'config.yml', Config::YAML);
-        $this->getServer()->getScheduler()->scheduleRepeatingTask(new MLGTask($this), 20);
+        $this->getServer()->getScheduler()->scheduleRepeatingTask(new MLGRushTask($this), 20);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
         $this->getServer()->getDefaultLevel()->setTime(0);
